@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - 'avalanche'
+
+jobs:
+  test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: Install node
+          uses: actions/setup-node@v1
+          with:
+            node-version: 14
+        - name: setup ipfs
+          uses: ibnesayeed/setup-ipfs@master
+          with:
+            run_daemon: true
+        - name: Install npm packages
+          run: |
+            node -v
+            yarn -v
+            yarn
+        - name: build
+          id: build
+          run: | 
+            cd apps/voting
+            yarn --ignore-engines --dev
+            if [[ -d app ]]; then
+              yarn build
+            fi
