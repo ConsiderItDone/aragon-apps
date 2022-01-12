@@ -9,6 +9,8 @@ node_modules
 */**/allFiredEvents
 */**/scTopics
 
+*/**/networks.json
+
 # lerna
 lerna-debug.log
 

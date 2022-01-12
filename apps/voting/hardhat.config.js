@@ -1,10 +1,9 @@
 const hardhatConfig = require('@aragon/hardhat-config')
+const customNetworks = require('./networks.json')
 
 hardhatConfig.networks = {
     ...hardhatConfig.networks,
-    dev: {
-        url: 'http://localhost:8545',
-    },
+    ...customNetworks,
 };
 
 module.exports = hardhatConfig
