@@ -4,7 +4,7 @@
   "private": true,
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@aragon/api": "^2.2.3",
+    "@aragon/api": "https://gitpkg.now.sh/ConsiderItDone/aragon.js/packages/aragon-api?avalanche",
     "@aragon/api-react": "^2.2.4",
     "@aragon/templates-tokens": "^1.2.0",
     "@aragon/ui": "^1.9.2",

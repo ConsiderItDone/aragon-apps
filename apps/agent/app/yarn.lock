@@ -16,6 +16,14 @@
     "@babel/runtime" "^7.1.2"
     rxjs "^6.5.2"
 
+"@aragon/api@https://gitpkg.now.sh/ConsiderItDone/aragon.js/packages/aragon-api?avalanche":
+  version "2.0.0"
+  resolved "https://gitpkg.now.sh/ConsiderItDone/aragon.js/packages/aragon-api?avalanche#3891103e6229545a509fa6e633383f510007224b"
+  dependencies:
+    "@aragon/rpc-messenger" "^2.0.0"
+    "@babel/runtime" "^7.1.2"
+    rxjs "^6.5.2"
+
 "@aragon/rpc-messenger@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@aragon/rpc-messenger/-/rpc-messenger-2.0.0.tgz#84d621fca88a723dc01db4f67b3936b6387a2c33"
